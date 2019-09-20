@@ -11,9 +11,9 @@ import java.util.Date;
 @Controller
 public class HelloController {
     @RequestMapping("/hello")
-    public String hello(HttpServletRequest request){
-        request.setAttribute("now",DateFormat.getDateTimeInstance().format(new Date()));
+    public String hello(HttpServletRequest request) {
+        request.setAttribute("now", DateFormat.getDateTimeInstance().format(new Date()));
 
-            return "hello";
-        }
+        return "hello";
+    }
 }
